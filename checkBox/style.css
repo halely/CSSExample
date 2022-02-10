@@ -86,6 +86,7 @@ label .icon::after {
 	transform-origin: top;
 	transform: rotate(315deg);
 	pointer-events: none;
+	transition: all .5s;
 }
 
 .icon .iconBox {
@@ -103,13 +104,15 @@ label .icon::after {
 		inset 1px 1px 2px #fff;
 }
 
-.icon .iconBox ion-icon{
+.icon .iconBox ion-icon {
 	color: #555;
 	font-size: 1.5em;
-	--ionicon-stroke-width:55px;
-	transition:  all .5s;
+	--ionicon-stroke-width: 55px;
+	transition: all .5s;
 }
-label input:checked~ .icon .iconBox ion-icon {
+
+label input:checked~.icon .iconBox ion-icon {
 	color: #00ffe2;
 	filter: drop-shadow(0 0 5px #00ffe2) drop-shadow(0 0 15px #00ffe2);
 }
+
